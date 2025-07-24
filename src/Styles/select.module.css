@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 3em;
+  border: 0.05em solid #ebe8e8;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  outline: none;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.value {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.clear-btn {
+  background: none;
+  color: #777;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.clear-btn:focus,
+.clear-btn:hover {
+  color: #333;
+}
+
+.divider {
+  background-color: #777;
+  align-self: stretch;
+  width: 0.05em;
+}
+
+.caret {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-top: 2px solid #777;
+  border-right: 2px solid #777;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.open {
+  transform: rotate(135deg);
+}
+
+.options {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border-radius: 0.25em;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: white;
+  z-index: 100;
+  box-shadow: 1px 1px 5px rgb(192, 192, 192);
+}
+
+.options.show {
+  display: block;
+}
+
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  height: 3em;
+}
+
+.option.selected {
+  background-color: hsl(240, 45%, 94%) !important;
+}
+
+.option.highlighted {
+  background-color: hsl(0, 0%, 97%);
+}
+
+.option-badge {
+  display: flex;
+  align-items: center;
+  padding: 0.15em 0.25em;
+  gap: 0.25em;
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+.option-badge {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.option-badge > .remove-btn {
+  padding: 3px;
+  font-size: 1em;
+  color: #4b96e6;
+}
+
+.inputField {
+  width: 90%;
+  height: 2em;
+  user-select: none;
+}
