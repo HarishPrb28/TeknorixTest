@@ -1,28 +1,49 @@
-# 💼 Job Openings App – Teknorix Careers
+# Teknorix Job Openings ReactJS Test
 
-A responsive ReactJS application to display active job openings at Teknorix using the Jobsoid API. Users can search, filter, and view detailed job descriptions with the ability to apply and share jobs on social platforms.
+## Overview
 
----
+This ReactJS application is designed to display and manage active job openings for Teknorix. It includes features such as search/filter functionality, department, location, and job function filters, along with a detailed view for each job opening. Additionally, it provides the ability to share job openings on Facebook, LinkedIn, and Twitter.
 
-## 🚀 Features
+## Features
 
-- 📋 **Job Listing** – Fetches job openings from Jobsoid API.
-- 🔎 **Search & Filter** – By department, location, and functional area.
-- 📄 **Job Detail Page** – Displays full job description.
-- 🔗 **Social Share Buttons** – Share job via LinkedIn, Facebook, and Twitter.
-- 🔁 **State Preservation** – Filters are preserved on page refresh or back navigation.
-- 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop using Tailwind CSS.
-- 🌀 **Random Other Jobs** – Sidebar with suggested jobs on detail page.
+### Search and Filters
 
----
+- Search box for job openings.
+- Dropdowns for department, location, and job function filters.
+- Applied filters are displayed with a remove option.
 
-## 📂 Folder Structure
+### List Page
 
-src/
-│
-├── components/ # UI components (Select, JobCard, OtherJobs, etc.)
-├── hooks/ # Custom hooks (useJobDetails, useFilteredJobs, etc.)
-├── pages/ # Page components (JobList, JobDetails)
-├── styles/ # CSS modules (select.module.css)
-├── App.jsx # Main app with routes
-└── main.jsx # Entry point
+- Active job openings grouped by department.
+- View button to navigate to the details page.
+- Apply button to navigate to the application form.
+
+### Details Page
+
+- Detailed view of a job opening.
+- Apply button to navigate to the application form.
+- List of other job openings from the same department.
+
+## Bonus Feature
+
+- Social share functionality for Facebook, LinkedIn, and Twitter.
+
+## How to use
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/HarishPrb28/TeknorixTest.git
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start the dev server
+
+```bash
+npm run dev
+```
